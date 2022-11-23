@@ -1,13 +1,13 @@
 public class Invoice {
 
-    private Integer invoiceCode;
-    private String date;
-    private String clientCif;
-    private String clientNif;
-    private Products products;
-    private Services services;
-    private Integer taxBase;
-    private Integer total;
+    public Integer invoiceCode;
+    public String date;
+    public String clientCif;
+    public String clientNif;
+    public Products products;
+    public Services services;
+    public Integer taxBase;
+    public Integer total;
 
     public Integer getInvoiceCode() {
         return invoiceCode;

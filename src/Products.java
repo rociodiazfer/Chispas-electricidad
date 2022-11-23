@@ -1,4 +1,4 @@
-public class Products {
+public class Products implements Sales_Line{
 
     private Integer productCode;
     private String name;
@@ -53,5 +53,20 @@ public class Products {
 
     public void setTypeIVA(Integer typeIVA) {
         this.typeIVA = typeIVA;
+    }
+    public void price() {
+        price();
+    }
+    public void typeIVA() {
+        typeIVA();
+    }
+    public void name() {
+        name();
+    }
+    public void totalIVA() {
+        totalIVA();
+    }
+    public void code() {
+        code();
     }
 }

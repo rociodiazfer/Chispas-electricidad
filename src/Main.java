@@ -6,50 +6,55 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String respuesta;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Bienvenido al menú del Programa Chispas.Selecciona que quieres rellenar:");
-        System.out.print("cliente,producto,facturas");
-        respuesta = sc.nextLine();
-        switch (respuesta) {
+        Autonomo cl = new Autonomo();
+        System.out.println("Bienvenido al Programa Chispas.Por favor introduzca los datos necesarios:");
+        //Class autonomo
+        Autonomo autonomo = new Autonomo();
+        System.out.println("Por Favor Introduzca los datos necesarios del cliente:");
+        System.out.println("El nombre del autonomo: ");
+        autonomo.setName("Lorenzo");
+        System.out.println("El nif del autonomo: ");
+        autonomo.setNif("73982654S");
+        System.out.println("El apellido del autonomo: ");
+        autonomo.setSurname("Gutierrez");
+        System.out.println("La población del autonomo: ");
+        autonomo.setPopulation("Ávila");
+        System.out.println("La provincia del autonomo: ");
+        autonomo.setProvince("Ávila");
+        System.out.println("El codigo postal del autonomo: ");
+        autonomo.setMailingAdress("05240");
+        System.out.println("El correo electrónico del autonomo: ");
+        autonomo.setEmiail("lorenzogut@educa.jcyl.es");
+        System.out.println("Introduce el telefono del autonomo: ");
+        autonomo.setPhone("652358634");
 
-            case "cliente":
-                //Class autonomous
-                Client cl = new Client();
-                System.out.println("Por Favor Introduzca los datos necesarios del cliente:");
-                System.out.println("Introduce el codigo del cliente");
-                String clientCode = sc.next();
-                cl.setClientCode();
-                System.out.println("Introduce el nombre del cliente");
-                String name = sc.next();
-                cl.setName();
-                System.out.println("Introduce el  cif o nif en caso de que sea autonmo");
-                String nif = sc.next();
-                cl.setNif();
-                System.out.println("Introduce el apellido(si es autonomo)");
-                String surname = sc.next();
-                cl.setSurname();
-                System.out.println("Introduce la población del cliente");
-                String population = sc.next();
-                cl.setPopulation();
-                System.out.println("Introduce la provincia del cliente");
-                String province = sc.next();
-                cl.setProvince();
-                System.out.println("Introdue el codigo postal del cliente");
-                String mailingAdress = sc.next();
-                cl.setMailingAdress();
-                System.out.println("Introduce el correo electrónico del cliente");
-                String email = sc.next();
-                cl.setEmiail();
-                System.out.println("Introduce el telefono del cliente");
-                String phone = sc.next();
-                cl.setPhone();
-
-                System.out.println("El codigo de cliente introducido es " + clientCode);// comprobación de que los datos se han introducido correctamente
-
-
-                //Class Products
-
-
-        }}
+        printClient(autonomo);
+        //Class Society
+        Society soc = new Society();
+        System.out.println("Por Favor Introduzca los datos necesarios de la sociedad:");
+        System.out.println("El nombre de la sociedad: ");
+        soc.setName("L.S LicoresPerez");
+        System.out.println("El cif de la sociedad: ");
+        soc.setCif("71673456");
+        System.out.println("La población de la sociedad: ");
+        soc.setPopulation("Madrid");
+        System.out.println("La provincia de la sociedad: ");
+        autonomo.setProvince("Madrid");
+        System.out.println("El codigo postal de la sociedad: ");
+        autonomo.setMailingAdress("02390");
+        System.out.println("El correo electrónico de la sociedad: ");
+        autonomo.setEmiail("licorsls@gmail.com");
+        System.out.println("El telefono de la sociedad: ");
+        autonomo.setPhone("653428709");
     }
+               public static void printClient(Client client){
+                   System.out.println("COD: "+ client.getClientCode()+ "nombre: "+client.getName());
+
+
+        }
+
+
+
+
+}

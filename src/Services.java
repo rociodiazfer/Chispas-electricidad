@@ -1,9 +1,10 @@
-public class Services implements Sales_Line{
+public class Services {
 
     private Integer serviceCode;
     private String name;
     private Integer price;
     private Integer typeIVA;
+
 
     public Integer getServiceCode() {
         return serviceCode;
@@ -38,20 +39,5 @@ public class Services implements Sales_Line{
     }
 
 
-    public void price() {
-        price();
     }
-    public void typeIVA() {
-       typeIVA();
-    }
-    public void name() {
-        name();
-    }
-    public void totalIVA() {
-        totalIVA();
-    }
-    public void code() {
-        code();
 
-    }
-}

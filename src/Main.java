@@ -11,50 +11,63 @@ public class Main {
         System.out.println("Bienvenido al Programa Chispas.Por favor introduzca los datos necesarios:");
         //Class autonomo
         Autonomo autonomo = new Autonomo();
-        System.out.println("Por Favor Introduzca los datos necesarios del cliente:");
-        System.out.println("El nombre del autonomo: ");
+        System.out.println("____________Los datos del cliente Autonomo:__________________ ");
         autonomo.setName("Lorenzo");
-        System.out.println("El nif del autonomo: ");
         autonomo.setNif("73982654S");
-        System.out.println("El apellido del autonomo: ");
         autonomo.setSurname("Gutierrez");
-        System.out.println("La población del autonomo: ");
         autonomo.setPopulation("Ávila");
-        System.out.println("La provincia del autonomo: ");
         autonomo.setProvince("Ávila");
-        System.out.println("El codigo postal del autonomo: ");
         autonomo.setMailingAdress("05240");
-        System.out.println("El correo electrónico del autonomo: ");
         autonomo.setEmiail("lorenzogut@educa.jcyl.es");
-        System.out.println("Introduce el telefono del autonomo: ");
         autonomo.setPhone("652358634");
 
         printClient(autonomo);
+
         //Class Society
         Society soc = new Society();
-        System.out.println("Por Favor Introduzca los datos necesarios de la sociedad:");
-        System.out.println("El nombre de la sociedad: ");
+        System.out.println("__________________Los datos del cliente Sociedad:__________________________ ");
         soc.setName("L.S LicoresPerez");
-        System.out.println("El cif de la sociedad: ");
         soc.setCif("71673456");
-        System.out.println("La población de la sociedad: ");
         soc.setPopulation("Madrid");
-        System.out.println("La provincia de la sociedad: ");
-        autonomo.setProvince("Madrid");
-        System.out.println("El codigo postal de la sociedad: ");
-        autonomo.setMailingAdress("02390");
-        System.out.println("El correo electrónico de la sociedad: ");
-        autonomo.setEmiail("licorsls@gmail.com");
-        System.out.println("El telefono de la sociedad: ");
-        autonomo.setPhone("653428709");
-    }
-               public static void printClient(Client client){
-                   System.out.println("COD: "+ client.getClientCode()+ "nombre: "+client.getName());
+        soc.setProvince("Madrid");
+        soc.setMailingAdress("02390");
+        soc.setEmail("licorsls@gmail.com");
+        soc.setPhone("653428709");
+        printClient(soc);
 
+        Services serv1 = new Services();
+        System.out.println("___________________Los datos del servicio 1 son:_______________________ ");
+        serv1.setName("Reparación de Cableado");
+        serv1.setPrice(50);
+        serv1.setServiceCode(3);
+        serv1.setTypeIVA(21);
+        printServ1(serv1);
+
+        Services serv2 = new Services();
+        System.out.println("___________________Los datos del servicio 2 son:________________________");
+        serv2.setName("Entrega de Bombillas");
+        serv2.setPrice(36);
+        serv2.setTypeIVA(21);
+        serv2.setServiceCode(2);
+        printServ2(serv2);
+    }
+    public static void printClient(Client client){
+        System.out.println("COD: " + client.getClientCode()+"\nNombre: " +client.getName());
+        System.out.println("Apellido:" + client.getSurname()+"\nPoblación: "+ client.getPopulation());
+        System.out.println("Provincia: "+ client.getProvince()+"\nCodigo Postal: "+ client.getMailingAdress());
+        System.out.println("Email: "+client.getEmail()+"\nTelefono: "+client.getPhone());
 
         }
+    public static void printServ1(Services services) {
+        System.out.println("Tipo de reparación: "+ services.getName()+"\n Precio del servicio: "+ services.getPrice());
+        System.out.println("Codigo del servicio: "+services.getServiceCode()+"\n Tipo de IVA: "+ services.getTypeIVA());
 
+    }
+    public static void printServ2(Services services){
+        System.out.println("Tipo de reparación: "+ services.getName()+"\n Precio del servicio: "+ services.getPrice());
+        System.out.println("Codigo del servicio: "+services.getServiceCode()+"\n Tipo de IVA: "+ services.getTypeIVA());
 
+    }
 
 
 }

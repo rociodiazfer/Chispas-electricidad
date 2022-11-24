@@ -42,11 +42,14 @@ public class Society implements Client{
     public String getClientCode() {
         return this.cif;
     }
-
+    @Override
     public String getName() {
         return this.name;
     }
-
+    @Override
+    public String getSurname() {
+        return null;
+    }
     @Override
     public String getMailingAdress() {
         return this.mailingAdress;

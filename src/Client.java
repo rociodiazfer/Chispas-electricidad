@@ -1,6 +1,7 @@
 public interface Client {
     public String getClientCode();
     public String getName();
+    public String getSurname();
     public String getMailingAdress();
     public String getPopulation();
     public String getProvince();

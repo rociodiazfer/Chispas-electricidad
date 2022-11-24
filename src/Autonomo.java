@@ -6,7 +6,7 @@ public class Autonomo implements Client {
     private String mailingAdress;
     private String population;
     private String province;
-    private String emiail;
+    private String email;
     private String phone;
 
     public void setNif(String nif) {
@@ -22,7 +22,7 @@ public class Autonomo implements Client {
         this.surname = surname;
     }
 
-    public void setMailingAdress(String surname) {
+    public void setMailingAdress(String mailingAdress) {
         this.mailingAdress = mailingAdress;
     }
 
@@ -35,7 +35,7 @@ public class Autonomo implements Client {
     }
 
     public void setEmiail(String email) {
-        this.emiail = emiail;
+        this.email = email;
     }
 
     public void setPhone(String phone) {
@@ -54,6 +54,11 @@ public class Autonomo implements Client {
     }
 
     @Override
+    public String getSurname() {
+        return this.surname;
+    }
+
+    @Override
     public String getMailingAdress() {
         return this.mailingAdress;
     }
@@ -65,17 +70,17 @@ public class Autonomo implements Client {
 
     @Override
     public String getProvince() {
-        return null;
+        return this.province;
     }
 
     @Override
     public String getEmail() {
-        return null;
+        return this.email;
     }
 
     @Override
     public String getPhone() {
-        return null;
+        return this.phone;
     }
 }
 

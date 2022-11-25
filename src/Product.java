@@ -4,8 +4,8 @@ public class Product implements Sales_Line {
     private String name;
     private String brand;
     private String model;
-    private Integer price;
-    private Integer typeIVA;
+    private double price;
+    private double typeIVA;
 
 
     public void setProductCode(Integer productCode) {
@@ -38,10 +38,9 @@ public class Product implements Sales_Line {
     }
 
     @Override
-    public Integer getTotal() {
-        return this.price+typeIVA;
+    public double getTotal() {
+        return this.price*1.21;
     }
-
     @Override
     public String getName() {
         return this.name;
@@ -53,12 +52,12 @@ public class Product implements Sales_Line {
     }
 
     @Override
-    public Integer getPrice() {
+    public double getPrice() {
         return this.price;
     }
 
     @Override
-    public Integer getTypeIVA() {
-        return this.typeIVA;
+    public double getTypeIVA() {
+        return this.typeIVA/100;
     }
 }

@@ -2,10 +2,8 @@ public interface Sales_Line {
 
     public String getName();
     public Integer getSalesCode();
-    public Integer getPrice();
-    public Integer getTypeIVA();
-
-    public Integer getTotal();
-
+    public double getPrice();
+    public double getTypeIVA();
+    public double getTotal();
 
 }

@@ -2,6 +2,7 @@ public class Invoice {
 
     public Integer invoiceCode;
     public String date;
+    public Double taxBase;
 
     public Integer getInvoiceCode() {
         return this.invoiceCode;
@@ -16,4 +17,5 @@ public class Invoice {
     public void setDate(String date) {
         this.date = date;
     }
+
 }

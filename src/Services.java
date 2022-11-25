@@ -32,18 +32,17 @@ public class Services implements Sales_Line {
     }
 
     @Override
-    public Integer getPrice() {
+    public double getPrice() {
         return this.price;
     }
 
     @Override
-    public Integer getTypeIVA() {
-        return this.typeIVA;
+    public double getTypeIVA() {
+        return typeIVA/100;
     }
-
     @Override
-    public Integer getTotal() {
-        return this.price+typeIVA;
+    public double getTotal() {
+        return this.price*1.1;
     }
 
 }

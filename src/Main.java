@@ -36,14 +36,14 @@ public class Main {
         serv1.setName("Reparación de Cableado");
         serv1.setPrice(50);
         serv1.setServiceCode(3);
-        serv1.setTypeIVA(10);
+        serv1.setTypeIVA(10.0);
         printServ1(serv1);
         //SERVICE 2
         Services serv2 = new Services();
         System.out.println("___________________Los datos del servicio 2 son:________________________");
         serv2.setName("Entrega de Bombillas");
         serv2.setPrice(36);
-        serv2.setTypeIVA(10);
+        serv2.setTypeIVA(10.0);
         serv2.setServiceCode(6);
         printServ2(serv2);
         //PRODUCT 1
@@ -68,14 +68,14 @@ public class Main {
         printProduct2(product2);
         //INVOICE 1
         Invoice invoice1 = new Invoice();
-        System.out.println("______________La factura de Autonomo:__________________________");
+        System.out.println("______________FACTURA DEL CLIENTE AUTONOMO__________________________");
         invoice1.setDate("24/11/2022");
         invoice1.setInvoiceCode(34);
 
         printInvoice(invoice1,product2,serv1,autonomo);
         //INVOICE 2
         Invoice invoice2 = new Invoice();
-        System.out.println("\n______________La factura de la Sociedad:__________________________");
+        System.out.println("\n______________FACTURA DEL CLIENTE SOCIEDAD:__________________________");
         invoice2.setDate("2/6/2022");
         invoice2.setInvoiceCode(20);
         printInvoice(invoice2,product,serv2,soc);

@@ -2,7 +2,7 @@ public class Society implements Client{
 
 
     private String cif;
-    private String name;
+    private String nameClient;
     private String mailingAdress;
     private String population;
     private String province;
@@ -15,7 +15,7 @@ public class Society implements Client{
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nameClient = name;
     }
 
     public void setMailingAdress(String mailingAdress) {
@@ -42,10 +42,12 @@ public class Society implements Client{
     public String getClientCode() {
         return this.cif;
     }
+
     @Override
-    public String getName() {
-        return this.name;
+    public String getNameClient() {
+        return this.nameClient;
     }
+
     @Override
     public String getSurname() {
         return null;

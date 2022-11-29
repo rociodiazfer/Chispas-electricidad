@@ -8,7 +8,7 @@ public class Main {
         //AUTONOMO
         Autonomo autonomo = new Autonomo();
         System.out.println("____________Los datos del cliente Autonomo:__________________ ");
-        autonomo.setNameClient("Lorenzo");
+        autonomo.setName("Lorenzo");
         autonomo.setNif("73982654S");
         autonomo.setSurname("Gutierrez");
         autonomo.setPopulation("Ávila");
@@ -85,8 +85,8 @@ public class Main {
     }
         //Class Client:Autonomo y Sociedad.
     public static void printClient(Client client) {
-        System.out.println("COD: " + client.getClientCode() + "\nNombre: " + client.getNameClient());
-        System.out.println("Apellido:" + client.getSurname() + "\nPoblación: " + client.getPopulation());
+        System.out.println("COD: " + client.getClientCode() + "\nNombre: " + client.getName());
+        System.out.println("Población: " + client.getPopulation());
         System.out.println("Provincia: " + client.getProvince() + "\nCodigo Postal: " + client.getMailingAdress());
         System.out.println("Email: " + client.getEmail() + "\nTelefono: " + client.getPhone());
 
@@ -125,7 +125,7 @@ public class Main {
         System.out.println("FACTURA:");
         System.out.println("COD De Factura: "+ invoice1.getInvoiceCode()+"\nFecha: "+invoice1.getDate());
         System.out.println("_________________________DATOS DEL CLIENTE______________________________________________________");
-        System.out.println("Nombre del Cliente: "+ autonomo.getNameClient() +"\nCodigo de Cliente: "+ autonomo.getClientCode());
+        System.out.println("Nombre del Cliente: "+ autonomo.getName() +"\nCodigo de Cliente: "+ autonomo.getClientCode());
         System.out.println("Poblacion del Cliente: "+ autonomo.getPopulation()+"\nDirección: "+autonomo.getMailingAdress());
         System.out.println("Provincia del Cliente: "+ autonomo.getProvince()+"\nEmail: "+ autonomo.getEmail());
         System.out.println("_________________________LINEA DE VENTA__________________________________________________");
@@ -150,7 +150,7 @@ public class Main {
        System.out.println("FACTURA:");
        System.out.println("COD De Factura: "+ invoice2.getInvoiceCode()+"\nFecha: "+invoice2.getDate());
        System.out.println("_________________________DATOS DEL CLIENTE______________________________________________________");
-       System.out.println("Nombre del Cliente: "+ soc.getNameClient() +"\nCodigo de Cliente: "+ soc.getClientCode());
+       System.out.println("Nombre del Cliente: "+ soc.getName() +"\nCodigo de Cliente: "+ soc.getClientCode());
        System.out.println("Poblacion del Cliente: "+ soc.getPopulation()+"\nDirección: "+soc.getMailingAdress());
        System.out.println("Provincia del Cliente: "+ soc.getProvince()+"\nEmail: "+ soc.getEmail());
        System.out.println("_________________________LINEA DE VENTA__________________________________________________");

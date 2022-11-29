@@ -2,41 +2,12 @@ public class Society implements Client{
 
 
     private String cif;
-    private String nameClient;
+    private String name;
     private String mailingAdress;
     private String population;
     private String province;
     private String email;
     private String phone;
-
-
-    public void setCif(String cif) {
-        this.cif = cif;
-    }
-
-    public void setName(String name) {
-        this.nameClient = name;
-    }
-
-    public void setMailingAdress(String mailingAdress) {
-        this.mailingAdress = mailingAdress;
-    }
-
-    public void setPopulation(String population) {
-        this.population = population;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 
     @Override
     public String getClientCode() {
@@ -44,14 +15,10 @@ public class Society implements Client{
     }
 
     @Override
-    public String getNameClient() {
-        return this.nameClient;
+    public String getName() {
+        return this.name;
     }
 
-    @Override
-    public String getSurname() {
-        return null;
-    }
     @Override
     public String getMailingAdress() {
         return this.mailingAdress;
@@ -75,5 +42,37 @@ public class Society implements Client{
     @Override
     public String getPhone() {
         return this.phone;
+    }
+
+    public String getCif() {
+        return cif;
+    }
+
+    public void setCif(String cif) {
+        this.cif = cif;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMailingAdress(String mailingAdress) {
+        this.mailingAdress = mailingAdress;
+    }
+
+    public void setPopulation(String population) {
+        this.population = population;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

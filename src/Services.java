@@ -6,24 +6,6 @@ public class Services implements Sales_Line {
     private Double typeIVA;
 
 
-    public void setServiceCode(Integer serviceCode) {
-        this.serviceCode = serviceCode;
-    }
-
-
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public void setTypeIVA(Double typeIVA) {
-        this.typeIVA = typeIVA;
-    }
-
     @Override
     public String getName() {
         return name;
@@ -48,5 +30,24 @@ public class Services implements Sales_Line {
         return this.price*1.1;
     }
 
+    public Integer getServiceCode() {
+        return serviceCode;
+    }
+
+    public void setServiceCode(Integer serviceCode) {
+        this.serviceCode = serviceCode;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public void setTypeIVA(Double typeIVA) {
+        this.typeIVA = typeIVA;
+    }
 }
 

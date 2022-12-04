@@ -1,3 +1,5 @@
+package com.iesamd.chispas;
+
 public class Autonomo implements Client {
 
     private String nif;

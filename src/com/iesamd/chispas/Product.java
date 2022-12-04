@@ -1,3 +1,5 @@
+package com.iesamd.chispas;
+
 public class Product implements Sales_Line {
 
     private Integer productCode;

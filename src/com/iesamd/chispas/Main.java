@@ -1,3 +1,5 @@
+package com.iesamd.chispas;
+
 public class Main {
 
 
@@ -7,7 +9,7 @@ public class Main {
         System.out.println("Bienvenido a Chispas esta es la información a contemplar:");
         //AUTONOMO
         Autonomo autonomo = new Autonomo();
-        System.out.println("____________Los datos del cliente Autonomo:__________________ ");
+        System.out.println("____________Los datos del cliente com.iesamd.chispas.Autonomo:__________________ ");
         autonomo.setName("Lorenzo");
         autonomo.setNif("73982654S");
         autonomo.setSurname("Gutierrez");
@@ -83,7 +85,7 @@ public class Main {
 
 
     }
-        //Class Client:Autonomo y Sociedad.
+        //Class com.iesamd.chispas.Client:com.iesamd.chispas.Autonomo y Sociedad.
     public static void printClient(Client client) {
         System.out.println("COD: " + client.getClientCode() + "\nNombre: " + client.getName());
         System.out.println("Población: " + client.getPopulation());
@@ -119,7 +121,7 @@ public class Main {
 
 
 }
-    //First Invoice, with Autonomo(Client) ,one services and one product.
+    //First com.iesamd.chispas.Invoice, with com.iesamd.chispas.Autonomo(com.iesamd.chispas.Client) ,one services and one product.
     public static void printInvoice(Invoice invoice1,Sales_Line sales_line, Services serv1,Autonomo autonomo) {
         //INVOICE AND CUSTOMER DATA
         System.out.println("FACTURA:");
@@ -129,12 +131,12 @@ public class Main {
         System.out.println("Poblacion del Cliente: "+ autonomo.getPopulation()+"\nDirección: "+autonomo.getMailingAdress());
         System.out.println("Provincia del Cliente: "+ autonomo.getProvince()+"\nEmail: "+ autonomo.getEmail());
         System.out.println("_________________________LINEA DE VENTA__________________________________________________");
-        //Product data:
+        //com.iesamd.chispas.Product com.iesamd.chispas.data:
         System.out.println("Codigo del producto: "+ sales_line.getSalesCode()+"\nNombre del Producto: "+sales_line.getName());
         System.out.println("Precio del Producto: "+sales_line.getPrice()+"\nTipo de IVA del Producto: "+sales_line.getTypeIVA());
         System.out.println("Total de producto: "+sales_line.getTotal());
         System.out.println("_______________________________________________________________________________________________________");
-        //Service data:
+        //Service com.iesamd.chispas.data:
         System.out.println("Codigo del servicio: "+serv1.getSalesCode()+"\nNombre del servicio: "+serv1.getName());
         System.out.println("Precio del Servicio: "+serv1.getPrice()+"\nTipo de IVA del Servicio: "+serv1.getTypeIVA());//TypeIVA=0.1
         System.out.println("Total del Servicio: "+ (int) serv1.getTotal());
@@ -154,12 +156,12 @@ public class Main {
        System.out.println("Poblacion del Cliente: "+ soc.getPopulation()+"\nDirección: "+soc.getMailingAdress());
        System.out.println("Provincia del Cliente: "+ soc.getProvince()+"\nEmail: "+ soc.getEmail());
        System.out.println("_________________________LINEA DE VENTA__________________________________________________");
-       //Product data:
+       //com.iesamd.chispas.Product com.iesamd.chispas.data:
        System.out.println("Codigo del producto: "+ sales_line.getSalesCode()+"\nNombre del Producto: "+sales_line.getName());
        System.out.println("Precio del Producto: "+sales_line.getPrice()+"\nTipo de IVA del Producto: "+sales_line.getTypeIVA());
        System.out.println("Total de producto: "+sales_line.getTotal());
        System.out.println("_______________________________________________________________________________________________________");
-       //Service data:
+       //Service com.iesamd.chispas.data:
        System.out.println("Codigo del servicio: "+serv2.getSalesCode()+"\nNombre del servicio: "+serv2.getName());
        System.out.println("Precio del Servicio: "+serv2.getPrice()+"\nTipo de IVA del Servicio: "+serv2.getTypeIVA());//TypeIVA=0.1
        System.out.println("Total del Servicio: "+ (int) serv2.getTotal());

@@ -1,3 +1,5 @@
+package com.iesamd.chispas;
+
 public interface Sales_Line {
 
     public String getName();

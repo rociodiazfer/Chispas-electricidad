@@ -1,3 +1,5 @@
+package com.iesamd.chispas;
+
 public class Society implements Client{
 
 

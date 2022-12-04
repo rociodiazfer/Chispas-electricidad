@@ -1,3 +1,5 @@
+package com.iesamd.chispas;
+
 public interface Client {
     public String getClientCode();
     public String getName();

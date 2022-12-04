@@ -1,4 +1,4 @@
-package data;
+package com.iesamd.chispas.data;
 
 import com.sun.deploy.util.SessionState;
 

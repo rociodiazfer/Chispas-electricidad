@@ -1,4 +1,4 @@
-package domain;
+package com.iesamd.chispas.domain;
 
 /**
  * Recuperar listado de clientes

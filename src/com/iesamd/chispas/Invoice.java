@@ -1,3 +1,5 @@
+package com.iesamd.chispas;
+
 public class Invoice {
 
     public Integer invoiceCode;

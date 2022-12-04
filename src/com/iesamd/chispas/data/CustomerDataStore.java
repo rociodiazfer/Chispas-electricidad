@@ -1,15 +1,14 @@
 package com.iesamd.chispas.data;
 
-import com.sun.deploy.util.SessionState;
+import com.iesamd.chispas.domain.models.Client;
 
 import java.util.List;
 
 public interface CustomerDataStore {
 
-    void saveCustomer (SessionState.Client client);
-    void deleteCustomer (SessionState.Client client);
-    void updateCustomer(SessionState.Client client);
-
-    List<SessionState.Client> getAllCustomer();
-    SessionState.Client findById(Integer codClient);
+    void saveCustomer (Client client);
+    void deleteCustomer (Client client);
+    void updateCustomer(Client client);
+    List<Client> getAllCustomer();
+    Client findById(Integer codClient);
 }

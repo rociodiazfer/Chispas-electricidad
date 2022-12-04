@@ -1,8 +1,8 @@
-package com.iesamd.chispas;
+package com.iesamd.chispas.domain.models;
 
 public class Services implements Sales_Line {
 
-    private Integer serviceCode;
+    private String serviceCode;
     private String name;
     private Integer price;
     private Double typeIVA;
@@ -14,7 +14,7 @@ public class Services implements Sales_Line {
     }
 
     @Override
-    public Integer getSalesCode() {
+    public String getSalesCode() {
         return this.serviceCode;
     }
 
@@ -32,11 +32,11 @@ public class Services implements Sales_Line {
         return this.price*1.1;
     }
 
-    public Integer getServiceCode() {
+    public String getServiceCode() {
         return serviceCode;
     }
 
-    public void setServiceCode(Integer serviceCode) {
+    public void setServiceCode(String serviceCode) {
         this.serviceCode = serviceCode;
     }
 

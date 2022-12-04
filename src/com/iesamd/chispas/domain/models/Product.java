@@ -1,8 +1,8 @@
-package com.iesamd.chispas;
+package com.iesamd.chispas.domain.models;
 
 public class Product implements Sales_Line {
 
-    private Integer productCode;
+    private String productCode;
     private String name;
     private String brand;
     private String model;
@@ -19,7 +19,7 @@ public class Product implements Sales_Line {
     }
 
     @Override
-    public Integer getSalesCode() {
+    public String getSalesCode() {
         return this.productCode;
     }
 
@@ -33,11 +33,7 @@ public class Product implements Sales_Line {
         return this.typeIVA/100;
     }
 
-    public Integer getProductCode() {
-        return productCode;
-    }
-
-    public void setProductCode(Integer productCode) {
+    public void setProductCode(String productCode) {
         this.productCode = productCode;
     }
 
@@ -68,4 +64,5 @@ public class Product implements Sales_Line {
     public void setTypeIVA(double typeIVA) {
         this.typeIVA = typeIVA;
     }
+
 }

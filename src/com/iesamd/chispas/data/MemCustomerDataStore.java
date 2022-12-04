@@ -1,36 +1,35 @@
 package com.iesamd.chispas.data;
 
-import com.sun.deploy.util.SessionState;
-
+import com.iesamd.chispas.domain.models.Client;
 import java.util.List;
 import java.util.TreeMap;
 
 public class MemCustomerDataStore implements CustomerDataStore {
 
-    private TreeMap<Integer, SessionState.Client> dataStore = new TreeMap<>();
+    private TreeMap<String, Client> dataStore = new TreeMap<>();
     @Override
-    public void saveCustomer(SessionState.Client client) {
+    public void saveCustomer(Client client) {
     dataStore.put(client.getClientCode(),client);
     }
 
     @Override
-    public void deleteCustomer(SessionState.Client client) {
-        dataStore.remove(client);
+    public void deleteCustomer(Client client) {
+        dataStore.remove(client.getClientCode());
     }
 
     @Override
-    public void updateCustomer(SessionState.Client client) {
-        dataStore.replace(client.getCodClient(),client);
+    public void updateCustomer(Client client) {
+        dataStore.replace(client.getClientCode(),client);
     }
 
 
     @Override
-    public List<SessionState.Client> getAllCustomer() {
+    public List<Client> getAllCustomer() {
         return dataStore.values().stream().toList();
     }
 
     @Override
-    public SessionState.Client findById(Integer codClient) {
+    public Client findById(Integer codClient) {
         return dataStore.get(codClient);
     }
 

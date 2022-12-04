@@ -1,4 +1,4 @@
-package com.iesamd.chispas;
+package com.iesamd.chispas.domain.models;
 
 public class Autonomo implements Client {
 

@@ -1,4 +1,4 @@
-package com.iesamd.chispas;
+package com.iesamd.chispas.domain.models;
 
 public interface Client {
     public String getClientCode();

@@ -1,6 +1,6 @@
-package com.iesamd.chispas;
+package com.iesamd.chispas.domain.models;
 
-public class Society implements Client{
+public class Society implements Client {
 
 
     private String cif;

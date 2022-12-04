@@ -1,14 +1,14 @@
-package com.iesamd.chispas;
+package com.iesamd.chispas.domain.models;
 
 public class Invoice {
 
-    public Integer invoiceCode;
+    public String invoiceCode;
     public String date;
 
-    public Integer getInvoiceCode() {
+    public String getInvoiceCode() {
         return this.invoiceCode;
     }
-    public void setInvoiceCode(Integer invoiceCode) {
+    public void setInvoiceCode(String invoiceCode) {
         this.invoiceCode = invoiceCode;
     }
     public String getDate() {
